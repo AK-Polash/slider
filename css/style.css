@@ -6,7 +6,11 @@
 img {
   vertical-align: middle;
 }
+body {
+  overflow-x: hidden;
+}
 .main {
+    position: relative;
 }
 .slide__main {
 }
@@ -15,6 +19,10 @@ img {
   height: 100vh;
   background-size: cover !important;
   position: absolute;
+  /* transform: translateX(100%); */
+}
+.active {
+  /* transform: translateX(0); */
 }
 .one {
   background: url("../images/one.jpg") no-repeat center;
@@ -30,7 +38,7 @@ img {
   height: 100%;
   background: rgba(0, 0, 0, 0.6);
 }
-.prev i {
+.prev {
   cursor: pointer;
   font-size: 36px;
   width: 55px;
@@ -45,7 +53,7 @@ img {
   left: 80px;
   transform: translateY(-50%);
 }
-.next i {
+.next {
   cursor: pointer;
   font-size: 36px;
   width: 55px;
@@ -59,7 +67,4 @@ img {
   top: 50%;
   right: 80px;
   transform: translateY(-50%);
-}
-.active {
-  transform: translateX(0);
 }
