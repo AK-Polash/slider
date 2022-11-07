@@ -1,0 +1,65 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+img {
+  vertical-align: middle;
+}
+.main {
+}
+.slide__main {
+}
+.slide__item {
+  width: 100%;
+  height: 100vh;
+  background-size: cover !important;
+  position: absolute;
+}
+.one {
+  background: url("../images/one.jpg") no-repeat center;
+}
+.two {
+  background: url("../images/two.jpg") no-repeat center;
+}
+.three {
+  background: url("../images/three.jpg") no-repeat center;
+}
+.overlay {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+}
+.prev i {
+  cursor: pointer;
+  font-size: 36px;
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  background: crimson;
+  color: #fff;
+  text-align: center;
+  line-height: 55px;
+  position: absolute;
+  top: 50%;
+  left: 80px;
+  transform: translateY(-50%);
+}
+.next i {
+  cursor: pointer;
+  font-size: 36px;
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  background: crimson;
+  color: #fff;
+  text-align: center;
+  line-height: 55px;
+  position: absolute;
+  top: 50%;
+  right: 80px;
+  transform: translateY(-50%);
+}
+.active {
+  transform: translateX(0);
+}
