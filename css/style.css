@@ -28,6 +28,11 @@ a {
   height: 100%;
   background-size: cover !important;
   position: absolute;
+  transform: translateX(100%);
+  transition: all linear 2s;
+}
+.active{
+  transform: translateX(0);
 }
 .one {
   background: url("../images/one.jpg") no-repeat center;
@@ -38,10 +43,13 @@ a {
 .three {
   background: url("../images/three.jpg") no-repeat center;
 }
+.four {
+  background: url("../images/four.jpg") no-repeat center;
+}
 .overlay {
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.6);
+  background: rgba(0, 0, 0, 0.5);
 }
 .arrow__item {
   cursor: pointer;
@@ -58,7 +66,7 @@ a {
   transform: translateY(-50%);
   transition: all linear 0.2s;
 }
-.arrow__item:hover{
+.arrow__item:hover {
   color: crimson;
   background-color: #f9f9f9;
 }

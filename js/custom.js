@@ -28,12 +28,8 @@ function myFun() {
   let activeSlide = document.querySelector(".active");
   let currentIndex = slideArr.indexOf(activeSlide);
   let [prev, next] = prevNext();
-  //   console.log("prev", prev);
-  //   console.log("next", next);
 
   slideArr.map((slideItem, index) => {
-    // console.log("slide item", slideItem);
-
     if (currentIndex == index) {
       slideItem.style.transform = "translateX(0)";
     } else if (slideItem == prev) {
@@ -49,9 +45,12 @@ prevButton.addEventListener("click", () => {
   let activeSlide = document.querySelector(".active");
 
   activeSlide.classList.remove("active");
-  prev.classList.add("active");
   activeSlide.style.transform = "translateX(100%)";
+  prev.classList.add("active");
   prev.style.transform = "translateX(0)";
+
+  // next.classList.remove("active");
+  // next.style.transform = "translateX(-100%)";
   myFun();
 });
 
@@ -60,8 +59,11 @@ nextButton.addEventListener("click", () => {
   let activeSlide = document.querySelector(".active");
 
   activeSlide.classList.remove("active");
-  next.classList.add("active");
   activeSlide.style.transform = "translateX(-100%)";
+  next.classList.add("active");
   next.style.transform = "translateX(0)";
+
+  // prev.classList.remove("active");
+  // prev.style.transform = "translateX(100%)";
   myFun();
 });
