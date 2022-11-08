@@ -28,8 +28,8 @@ function myFun() {
   let activeSlide = document.querySelector(".active");
   let currentIndex = slideArr.indexOf(activeSlide);
   let [prev, next] = prevNext();
-//   console.log("prev", prev);
-//   console.log("next", next);
+  //   console.log("prev", prev);
+  //   console.log("next", next);
 
   slideArr.map((slideItem, index) => {
     // console.log("slide item", slideItem);
@@ -45,7 +45,7 @@ function myFun() {
 }
 
 prevButton.addEventListener("click", () => {
-  let [prev] = prevNext();
+  let [prev, next] = prevNext();
   let activeSlide = document.querySelector(".active");
 
   activeSlide.classList.remove("active");
@@ -56,7 +56,7 @@ prevButton.addEventListener("click", () => {
 });
 
 nextButton.addEventListener("click", () => {
-  let [next] = prevNext();
+  let [prev, next] = prevNext();
   let activeSlide = document.querySelector(".active");
 
   activeSlide.classList.remove("active");
