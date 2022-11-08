@@ -29,10 +29,12 @@ a {
   background-size: cover !important;
   position: absolute;
   transform: translateX(100%);
-  transition: all linear 2s;
 }
 .active{
   transform: translateX(0);
+}
+.smooth{
+  transition: all linear .7s;
 }
 .one {
   background: url("../images/one.jpg") no-repeat center;

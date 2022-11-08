@@ -45,6 +45,10 @@ prevButton.addEventListener("click", () => {
   let [prev, next] = prevNext();
   let activeSlide = document.querySelector(".active");
 
+  next.classList.remove("smooth"); // question here..!
+  activeSlide.classList.add("smooth");
+  prev.classList.add("smooth");
+  
   activeSlide.classList.remove("active");
   activeSlide.style.transform = "translateX(100%)";
   prev.classList.add("active");
@@ -59,6 +63,10 @@ prevButton.addEventListener("click", () => {
 nextButton.addEventListener("click", () => {
   let [prev, next] = prevNext();
   let activeSlide = document.querySelector(".active");
+
+  prev.classList.remove("smooth"); // question here..!
+  activeSlide.classList.add("smooth");
+  next.classList.add("smooth");
 
   activeSlide.classList.remove("active");
   activeSlide.style.transform = "translateX(-100%)";
