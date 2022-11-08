@@ -9,20 +9,25 @@ img {
 body {
   overflow-x: hidden;
 }
-.main {
-    position: relative;
+ul,
+ol {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+#slider {
+  position: relative;
+  height: 100vh;
 }
 .slide__main {
+  height: 100%;
 }
 .slide__item {
   width: 100%;
-  height: 100vh;
+  height: 100%;
   background-size: cover !important;
   position: absolute;
-  /* transform: translateX(100%); */
-}
-.active {
-  /* transform: translateX(0); */
 }
 .one {
   background: url("../images/one.jpg") no-repeat center;
@@ -38,33 +43,28 @@ body {
   height: 100%;
   background: rgba(0, 0, 0, 0.6);
 }
-.prev {
+.arrow__item {
   cursor: pointer;
   font-size: 36px;
   width: 55px;
   height: 55px;
   border-radius: 50%;
   background: crimson;
-  color: #fff;
+  color: #f9f9f9;
   text-align: center;
   line-height: 55px;
   position: absolute;
   top: 50%;
-  left: 80px;
   transform: translateY(-50%);
+  transition: all linear 0.2s;
+}
+.arrow__item:hover{
+  color: crimson;
+  background-color: #f9f9f9;
+}
+.prev {
+  left: 80px;
 }
 .next {
-  cursor: pointer;
-  font-size: 36px;
-  width: 55px;
-  height: 55px;
-  border-radius: 50%;
-  background: crimson;
-  color: #fff;
-  text-align: center;
-  line-height: 55px;
-  position: absolute;
-  top: 50%;
   right: 80px;
-  transform: translateY(-50%);
 }
