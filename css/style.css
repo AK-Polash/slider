@@ -48,6 +48,12 @@ a {
 .four {
   background: url("../images/four.jpg") no-repeat center;
 }
+.five {
+  background: url("../images/five.jpg") no-repeat center;
+}
+.six {
+  background: url("../images/six.jpg") no-repeat center;
+}
 .overlay {
   width: 100%;
   height: 100%;
