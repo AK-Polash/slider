@@ -30,6 +30,7 @@ function myFun() {
   let [prev, next] = prevNext();
 
   slideArr.map((slideItem, index) => {
+    // eikhane logic ta bujhi nai..!
     if (currentIndex == index) {
       slideItem.style.transform = "translateX(0)";
     } else if (slideItem == prev) {
@@ -49,6 +50,7 @@ prevButton.addEventListener("click", () => {
   prev.classList.add("active");
   prev.style.transform = "translateX(0)";
 
+  // "myFun()" ke baad diye last e ei "2 line" add korlew to same kaj kore, tahole extra 1 ta function add kore lav ki...?
   // next.classList.remove("active");
   // next.style.transform = "translateX(-100%)";
   myFun();
@@ -63,6 +65,7 @@ nextButton.addEventListener("click", () => {
   next.classList.add("active");
   next.style.transform = "translateX(0)";
 
+  // "myFun()" ke baad diye last e ei "2 line" add korlew to same kaj kore, tahole extra 1 ta function add kore lav ki...?
   // prev.classList.remove("active");
   // prev.style.transform = "translateX(100%)";
   myFun();
